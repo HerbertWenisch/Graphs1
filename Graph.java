@@ -1,6 +1,6 @@
 /**
  * @author (Herbert Wenisch)
- * @version (1.b  Aufgabe)
+ * @version (1.b  Lösung)
  */
 
 import java.util.Arrays;
@@ -25,8 +25,11 @@ public class Graph{
         V++;
     }
 
+    
     public void kanteEinfügen(int von, int nach, int gewicht){
-        // Your code!
+        if(von >= V ||  nach >= V) return;
+        if(von < 0 ||  nach < 0 ) return;
+        matrix[von][nach] = gewicht;
     }
     
     
