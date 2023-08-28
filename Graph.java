@@ -1,6 +1,6 @@
 /**
  * @author (Herbert Wenisch)
- * @version (1.c  Aufgabe)
+ * @version (1.c  Lösung)
  */
 
 import java.util.Arrays;
@@ -25,9 +25,10 @@ public class Graph{
         V++;
     }
 
-    private int knotenNummerGeben(String Bezeichner){
-        // Your code!
-        return 0; // Nur damit kein Compilierfehler entsteht!
+    private int knotenNummerGeben(String bezeichner){
+        for(int i = 0; i < V; i++)
+           if(bezeichner.equals(knotens[i].toString())) return i;
+        return -1;   // Fehler!
     }
     
     
@@ -38,7 +39,7 @@ public class Graph{
     }
     
     public void kanteEinfügen(String von, String nach, int gewicht){
-        // obige Methode aufrufen
+        kanteEinfügen(knotenNummerGeben(von), knotenNummerGeben(nach), gewicht);
     }
     
     
