@@ -28,14 +28,14 @@ public class ZeitTauschen {
     }
     
     private void fillUpEdges(){
-        graph.kanteEinfügen(0, 1, 8);
-        graph.kanteEinfügen(0, 2, 4);
-        graph.kanteEinfügen(0, 4, 13);
-        graph.kanteEinfügen(1, 3, 9);
-        graph.kanteEinfügen(2, 1, 2);
-        graph.kanteEinfügen(2, 3, 8);
-        graph.kanteEinfügen(3, 0, 12);
-        graph.kanteEinfügen(3, 4, 5);
-        graph.kanteEinfügen(4, 2, 9);
+        graph.kanteEinfügen("Roy", "Mass", 8);
+        graph.kanteEinfügen("Roy", "Jen", 4);
+        graph.kanteEinfügen("Roy", "Terry", 13);
+        graph.kanteEinfügen("Mass", "Delina", 9);
+        graph.kanteEinfügen("Jen", "Mass", 2);
+        graph.kanteEinfügen("Jen", "Delina", 8);
+        graph.kanteEinfügen("Delina", "Roy", 12);
+        graph.kanteEinfügen("Delina", "Terry", 5);
+        graph.kanteEinfügen("Terry", "Jen", 9);
     }
 }

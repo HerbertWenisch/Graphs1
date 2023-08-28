@@ -1,6 +1,6 @@
 /**
  * @author (Herbert Wenisch)
- * @version (1.b  Lösung)
+ * @version (1.c  Aufgabe)
  */
 
 import java.util.Arrays;
@@ -25,11 +25,20 @@ public class Graph{
         V++;
     }
 
+    private int knotenNummerGeben(String Bezeichner){
+        // Your code!
+        return 0; // Nur damit kein Compilierfehler entsteht!
+    }
+    
     
     public void kanteEinfügen(int von, int nach, int gewicht){
         if(von >= V ||  nach >= V) return;
         if(von < 0 ||  nach < 0 ) return;
         matrix[von][nach] = gewicht;
+    }
+    
+    public void kanteEinfügen(String von, String nach, int gewicht){
+        // obige Methode aufrufen
     }
     
     
