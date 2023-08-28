@@ -1,6 +1,6 @@
 /**
  * @author (Herbert Wenisch)
- * @version (1.a  Aufgabe)
+ * @version (1.a  Lösung)
  */
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ public class Graph{
     private Knoten[] knotens;  // also: die Knoten
     
     
-    // Erzeugt einen leeren Graf:
+    // erzeugt einen leeren Graf:
     public Graph(int V_MAX){
         this.V_MAX = V_MAX;
         knotens = new Knoten[V_MAX];
@@ -19,7 +19,9 @@ public class Graph{
     
     
     public void knotenEinfügen(Knoten knoten){
-        // Your code!
+        if (V == V_MAX) return;
+        knotens[V] = knoten;
+        V++;
     }
 
     // gibt einen vollen Array ohne Freiplätze zurück:
