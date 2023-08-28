@@ -27,6 +27,12 @@ public class ZeitTauschenTest {
         for(Knoten knoten: graph.getKnotens())
             System.out.print(knoten + "  ");
     }
+    
+    @Test
+    public void test_matrix(){
+        System.out.println("Matrix: \n");
+        System.out.println(graph);
+    }
 }
 
 
