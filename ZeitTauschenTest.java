@@ -26,6 +26,7 @@ public class ZeitTauschenTest {
         System.out.println("----- Knotenfeld:");
         for(Knoten knoten: graph.getKnotens())
             System.out.print(knoten + "  ");
+        System.out.println();    
     }
     
     @Test
@@ -36,7 +37,7 @@ public class ZeitTauschenTest {
     
     @Test
     public void test_display(){
-        GraphStream.display(graph);
+        graph.display();
     }
 }
 
