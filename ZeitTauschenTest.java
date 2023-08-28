@@ -33,6 +33,11 @@ public class ZeitTauschenTest {
         System.out.println("Matrix: \n");
         System.out.println(graph);
     }
+    
+    @Test
+    public void test_display(){
+        GraphStream.display(graph);
+    }
 }
 
 

@@ -1,6 +1,6 @@
 /**
  * @author (Herbert Wenisch)
- * @version (1.c  Lösung)
+ * @version (Endfassung mit Grafikausgabe)
  */
 
 import java.util.Arrays;
@@ -52,6 +52,9 @@ public class Graph{
         return V;
     }
     
+    public int adj(int i, int j){
+        return matrix[i][j];
+    }
     
     // gibt die Matrix aus:
     @Override
