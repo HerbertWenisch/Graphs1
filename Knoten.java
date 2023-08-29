@@ -20,6 +20,7 @@ public class Knoten {
     // Usefull, when drawing tables.
     public String toString(int n, int len){
         String whiteSpace10 = "          "; 
-        return (bezeichner.substring(0,n) + whiteSpace10).substring(0,len);
+        String bezPlus = bezeichner + whiteSpace10;
+        return (bezPlus.substring(0,n) + whiteSpace10).substring(0,len);
     }
 }
